@@ -1,0 +1,34 @@
+//Question- To complete the given C program, 
+write a function named greatest that takes three integers a, b, and c as inputs
+and returns the greatest integer number among the three integer numbers.
+
+#include <stdio.h>
+
+// Write code below
+int greatest(int p,int q,int r)
+{
+    if (p>q && p>r)
+    {
+        return p;
+    }
+    else if (q>p && q>r)
+    {
+        return q;
+    }
+    else 
+    {
+        return r;
+    }
+}
+int main() 
+{
+    int a, b, c, d;
+    scanf("%d", &a);
+    scanf("%d", &b);
+    scanf("%d", &c);
+    
+    d = greatest(a, b, c);
+    printf("%d", d);
+    
+    return 0;
+}
