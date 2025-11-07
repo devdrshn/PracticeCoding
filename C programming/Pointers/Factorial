@@ -1,0 +1,30 @@
+QUESTION: Write a function named factorial that takes 2 parameters: an integer pointer a and an integer pointer b. 
+The function computes the factorial of the input integer value stored at pointer a and assigns the result at pointer b.
+
+CODE:
+
+#include <stdio.h>
+
+void factorial(int *a, int *b){
+    int y;
+    y= *(a);
+    int fact=0;
+    for (y;y>0;y--){
+        if (fact==0){
+            fact= y;
+        }
+        else {
+            fact=fact*y;
+        }
+    }
+    *b=fact;
+}
+
+int main() 
+{
+    int a, b;
+    scanf("%d", &a);    
+    factorial(&a, &b);    
+    printf("%d", b);    
+    return 0;
+}
