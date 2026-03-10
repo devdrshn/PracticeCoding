@@ -1,0 +1,40 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+
+\title{Article}
+\author{ABC}
+\date{March 10 2026}
+
+% the space between /documentclass{} and \begin{document} is called preamble. you should mention all the packages required for your document in this space.
+
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{subfigure}
+\usepackage{xcolor} % for standard colors
+\usepackage[dvipsnames]{xcolor}% for extra colors
+\usepackage{amsmath} % for the equation* environment
+\title{s2 latex tutorial - 1}
+\author{xyz}
+\date{10 March 2026}
+\begin{document}
+\maketitle
+\section{Introduction to changing font parameters}
+\subsection{Font Color}
+This example shows some instances of using the \texttt{xcolor} package
+to change the color of elements in \LaTeX. \begin{itemize}
+\color{blue}
+\item my business proposal aims at increasing revenue turnover by 50 percent.
+\item target growth of 40 percent in first 5 years
+
+\end{itemize}
+\noindent
+{\color{red} \rule{\linewidth}{0.5mm}}
+This example shows how to use the \texttt{xcolorpackage}
+to change the color of elements of the \LaTeX{} page.
+\begin{enumerate}
+\color{ForestGreen}
+\item First item
+\item Second item
+\end{enumerate}
+
+\end{document}
